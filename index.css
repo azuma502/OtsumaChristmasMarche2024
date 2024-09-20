@@ -1,0 +1,649 @@
+/* ベースとなるスタイル */
+.menu {
+    font-size: 16px;
+    padding: 10px;
+}
+
+/* タブレットサイズ */
+@media (max-width: 768px) {
+    .menu {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* モバイルサイズ */
+@media (max-width: 480px) {
+    .menu {
+        font-size: 12px;
+        padding: 5px;
+    }
+}
+
+.christmas-tree-3-1 {
+    width: 1512px;
+    position: absolute;
+    margin: 0 !important;
+    top: 62px;
+    left: 0px;
+    height: 1611.1px;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.b {
+    width: 535px;
+    position: relative;
+    display: none;
+}
+
+.menu {
+    width: 85.2px;
+    position: relative;
+    line-height: 32px;
+    display: flex;
+    align-items: center;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.menu-icon {
+    width: 32px;
+    position: relative;
+    height: 32px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.menu-parent {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 22px;
+    text-align: left;
+    font-size: 32px;
+    font-family: 'Tiro Devanagari Marathi';
+}
+
+.overlay {
+    align-self: stretch;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 36px 40px 16px;
+    box-sizing: border-box;
+    font-size: 40px;
+    font-family: 'Kaisei Tokumin';
+}
+
+.frame-child {
+    align-self: stretch;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0);
+    height: 576px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.b1 {
+    position: relative;
+}
+
+.wrapper {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 43px;
+    font-size: 92px;
+    font-family: 'Kaisei Tokumin';
+}
+
+.b2 {
+    position: relative;
+    line-height: 38.4px;
+}
+
+.container {
+    width: 763px;
+    border-radius: 20px;
+    background-color: #8c243f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 43px;
+    box-sizing: border-box;
+}
+
+.term {
+    position: relative;
+    line-height: 33.28px;
+}
+
+.term-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 46px;
+}
+
+.term-group {
+    width: 680px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 46px;
+}
+
+.term-container {
+    width: 680px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 46px;
+}
+
+.frame-group {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    text-align: left;
+    color: #8c243f;
+}
+
+.frame-parent {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0px 48px;
+    gap: 24px;
+    font-size: 32px;
+    color: #fff;
+}
+
+.heading-1 {
+    align-self: stretch;
+    position: relative;
+    line-height: 76.8px;
+}
+
+.moleclues-card-child {
+    align-self: stretch;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 222.7px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.div {
+    align-self: stretch;
+    position: relative;
+    line-height: 24.64px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    height: 24.6px;
+    flex-shrink: 0;
+}
+
+.div1 {
+    align-self: stretch;
+    position: relative;
+    font-size: 13.6px;
+    line-height: 24.48px;
+    display: flex;
+    align-items: center;
+    height: 49px;
+    flex-shrink: 0;
+}
+
+.parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px;
+    gap: 9px;
+}
+
+.moleclues-card {
+    width: 338px;
+    border-radius: 10px;
+    border: 2px solid #8c243f;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+/* モレキュールカードの親コンテナ */
+.moleclues-card-parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    /* 適切な間隔を設定 */
+}
+
+/* 個々のカードのスタイリング */
+.moleclues-card {
+    flex: 1 1 30%;
+    /* 基本の幅を20%に設定し、フレックスグロウとフレックスシュリンクを許可 */
+    max-width: 20%;
+    /* 最大幅も20%に設定 */
+    box-sizing: border-box;
+    /* パディングとボーダーを幅に含める */
+}
+
+/* レスポンシブ対応のメディアクエリ */
+@media (max-width: 1512px) {
+    .moleclues-card {
+        flex: 1 1 33.33%;
+        /* 画面が狭い場合は3列で表示 */
+        max-width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .moleclues-card {
+        flex: 1 1 50%;
+        /* タブレットサイズでは2列で表示 */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .moleclues-card {
+        flex: 1 1 100%;
+        /* モバイルサイズでは1列で表示 */
+        max-width: 100%;
+    }
+}
+
+.frame-div {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 52px;
+    text-align: left;
+    font-size: 17.6px;
+}
+
+.heading-1-shop-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 24px;
+}
+
+.div12 {
+    position: relative;
+    line-height: 31.68px;
+    font-weight: 600;
+}
+
+.atoms-icon {
+    border-radius: 40px;
+    border: 2px solid #8c243f;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 100px;
+    font-size: 17.6px;
+}
+
+.frame-container {
+    align-self: stretch;
+    background-color: #fff7f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 24px 0px 64px;
+    gap: 50px;
+}
+
+.heading-11 {
+    align-self: stretch;
+    position: relative;
+    line-height: 76.8px;
+    z-index: 0;
+}
+
+.frame-item {
+    align-self: stretch;
+    position: relative;
+    background-color: #8c243f;
+    /* height: 619px; */
+    z-index: 1;
+}
+
+.frame-item iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    /* 16:9の比率を保持 */
+}
+
+.heading-12 {
+    width: 1512px;
+    position: absolute;
+    margin: 0 !important;
+    top: 418.48px;
+    left: 0px;
+    display: flex;
+    color: #8c243f;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.heading-1-shop-group {
+    align-self: stretch;
+    background-color: #8c243f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 36px 0px 80px;
+    position: relative;
+    gap: 24px;
+    color: #fff;
+}
+
+.heading-13 {
+    align-self: stretch;
+    position: relative;
+}
+
+.he {
+    align-self: stretch;
+    position: relative;
+    font-size: 20px;
+    line-height: 24.48px;
+    font-weight: 600;
+}
+
+.heading-1-shop-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    z-index: 0;
+}
+
+.heading-14 {
+    width: 1512px;
+    position: absolute;
+    margin: 0 !important;
+    top: 449.48px;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.frame-parent1 {
+    align-self: stretch;
+    background-color: #fff7f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 36px 0px 80px;
+    position: relative;
+    gap: 30px;
+}
+
+.p {
+    margin: 0;
+}
+
+.heading-1-shop-parent1 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.frame-wrapper {
+    align-self: stretch;
+    background-color: #fff7f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 36px 0px 80px;
+}
+
+.heading-16 {
+    align-self: stretch;
+    position: relative;
+    font-weight: 600;
+}
+
+.div14 {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    line-height: 24.48px;
+}
+
+.atoms-text {
+    width: 177px;
+    position: relative;
+    height: 25px;
+}
+
+.atoms-text-parent {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 153px;
+}
+
+.atoms-text-group {
+    align-self: stretch;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 90px;
+}
+
+.frame-parent2 {
+    display: flex;
+    flex-direction: row;
+    /* アイテムを横並びに配置 */
+    flex-wrap: wrap;
+    /* コンテナの幅を超えると折り返し */
+    align-items: center;
+    /* アイテムを垂直方向の中央に配置 */
+    justify-content: center;
+    /* アイテムを水平方向の中央に配置 */
+    gap: 32px;
+    /* アイテム間に32pxの間隔を設ける */
+    padding: 0 20px;
+    /* 左右に20pxのパディングを設定 */
+    text-align: center;
+    /* テキストを中央揃えにする */
+    font-size: 13.6px;
+    /* フォントサイズを13.6pxに設定 */
+}
+
+/* 子要素のフレックス設定 */
+.frame-parent2 .child {
+    flex: 1 1 30%;
+    /* 基本の幅を30%に設定 */
+    max-width: 30%;
+    /* 最大幅も30%に設定 */
+}
+
+/* メディアクエリでのレスポンシブ設定 */
+@media (max-width: 1200px) {
+    .frame-parent2 .child {
+        flex: 1 1 33.33%;
+        /* 画面が中間のサイズの場合は3列で表示 */
+        max-width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .frame-parent2 .child {
+        flex: 1 1 50%;
+        /* タブレットサイズでは2列で表示 */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .frame-parent2 .child {
+        flex: 1 1 100%;
+        /* モバイルサイズでは1列で表示 */
+        max-width: 100%;
+    }
+}
+
+.heading-1-shop-parent2 {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 53px 0px;
+    gap: 32px;
+    font-size: 24px;
+}
+
+.div29 {
+    align-self: stretch;
+    position: relative;
+    font-size: 13.28px;
+    line-height: 24.48px;
+    font-family: Inter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24.5px;
+    flex-shrink: 0;
+}
+
+.parent5 {
+    align-self: stretch;
+    background-color: #8c243f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 62px 0px;
+    gap: 12px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Kaisei Tokumin';
+}
+
+.overlay-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    z-index: 1;
+}
+
+.div30 {
+    position: relative;
+    line-height: 32px;
+    font-weight: 500;
+}
+
+.parent6 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 42px;
+    font-size: 24px;
+    font-family: Inter;
+}
+
+.overlay1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* 左端からスタート */
+    right: 0;
+    /* 右端まで伸ばす */
+    width: 100%;
+    /* 幅を100%に設定 */
+    background-color: #e4f7ff;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 40px 16px;
+    box-sizing: border-box;
+    z-index: 2;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Kaisei Tokumin';
+}
+
+.christmas-tree-3-1-parent {
+    width: 100%;
+    position: relative;
+    background-color: #e4f7ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    font-size: 48px;
+    color: #8c243f;
+    font-family: Inter;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.frame-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
