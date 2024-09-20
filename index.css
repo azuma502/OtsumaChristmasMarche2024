@@ -94,7 +94,6 @@
 
 .wrapper {
     align-self: stretch;
-    border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.7);
     display: flex;
     flex-direction: row;
@@ -136,7 +135,7 @@
 }
 
 .term-group {
-    width: 522px;
+    width: 680px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -145,7 +144,7 @@
 }
 
 .term-container {
-    width: 522px;
+    width: 680px;
     display: flex;
     flex-direction: row;
     align-items: flex-end;
@@ -238,13 +237,50 @@
     justify-content: flex-start;
 }
 
+/* モレキュールカードの親コンテナ */
 .moleclues-card-parent {
-    align-self: stretch;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 60px;
+    /* 適切な間隔を設定 */
+}
+
+/* 個々のカードのスタイリング */
+.moleclues-card {
+    flex: 1 1 30%;
+    /* 基本の幅を20%に設定し、フレックスグロウとフレックスシュリンクを許可 */
+    max-width: 20%;
+    /* 最大幅も20%に設定 */
+    box-sizing: border-box;
+    /* パディングとボーダーを幅に含める */
+}
+
+/* レスポンシブ対応のメディアクエリ */
+@media (max-width: 1512px) {
+    .moleclues-card {
+        flex: 1 1 33.33%;
+        /* 画面が狭い場合は3列で表示 */
+        max-width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .moleclues-card {
+        flex: 1 1 50%;
+        /* タブレットサイズでは2列で表示 */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .moleclues-card {
+        flex: 1 1 100%;
+        /* モバイルサイズでは1列で表示 */
+        max-width: 100%;
+    }
 }
 
 .frame-div {
@@ -303,11 +339,18 @@
 }
 
 .frame-item {
-    width: 1082px;
+    align-self: stretch;
     position: relative;
-    background-color: #d9d9d9;
-    height: 619px;
+    background-color: #8c243f;
+    /* height: 619px; */
     z-index: 1;
+}
+
+.frame-item iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    /* 16:9の比率を保持 */
 }
 
 .heading-12 {
@@ -439,19 +482,60 @@
     flex-direction: row;
     align-items: flex-start;
     justify-content: flex-start;
-    gap: 153px;
+    gap: 90px;
 }
 
 .frame-parent2 {
-    align-self: stretch;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    /* アイテムを横並びに配置 */
+    flex-wrap: wrap;
+    /* コンテナの幅を超えると折り返し */
     align-items: center;
-    justify-content: flex-start;
-    padding: 0px 172px;
+    /* アイテムを垂直方向の中央に配置 */
+    justify-content: center;
+    /* アイテムを水平方向の中央に配置 */
     gap: 32px;
-    text-align: left;
+    /* アイテム間に32pxの間隔を設ける */
+    padding: 0 20px;
+    /* 左右に20pxのパディングを設定 */
+    text-align: center;
+    /* テキストを中央揃えにする */
     font-size: 13.6px;
+    /* フォントサイズを13.6pxに設定 */
+}
+
+/* 子要素のフレックス設定 */
+.frame-parent2 .child {
+    flex: 1 1 30%;
+    /* 基本の幅を30%に設定 */
+    max-width: 30%;
+    /* 最大幅も30%に設定 */
+}
+
+/* メディアクエリでのレスポンシブ設定 */
+@media (max-width: 1200px) {
+    .frame-parent2 .child {
+        flex: 1 1 33.33%;
+        /* 画面が中間のサイズの場合は3列で表示 */
+        max-width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .frame-parent2 .child {
+        flex: 1 1 50%;
+        /* タブレットサイズでは2列で表示 */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .frame-parent2 .child {
+        flex: 1 1 100%;
+        /* モバイルサイズでは1列で表示 */
+        max-width: 100%;
+    }
 }
 
 .heading-1-shop-parent2 {
@@ -518,11 +602,14 @@
 }
 
 .overlay1 {
-    align-self: stretch;
-    margin: 0 !important;
-    position: absolute;
-    top: 0px;
-    left: calc(50% - 756px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    /* 左端からスタート */
+    right: 0;
+    /* 右端まで伸ばす */
+    width: 100%;
+    /* 幅を100%に設定 */
     background-color: #e4f7ff;
     display: flex;
     flex-direction: row;
@@ -548,4 +635,15 @@
     font-size: 48px;
     color: #8c243f;
     font-family: Inter;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.frame-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
