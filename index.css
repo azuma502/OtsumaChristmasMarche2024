@@ -190,6 +190,7 @@
     height: 222.7px;
     flex-shrink: 0;
     object-fit: cover;
+    overflow: hidden;
 }
 
 .div {
@@ -210,7 +211,7 @@
     line-height: 24.48px;
     display: flex;
     align-items: center;
-    height: 49px;
+    align-self: auto;
     flex-shrink: 0;
 }
 
@@ -222,6 +223,7 @@
     justify-content: flex-start;
     padding: 16px;
     gap: 9px;
+    z-index: 2;
 }
 
 .moleclues-card {
@@ -235,6 +237,38 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
+    transition: background-color 0.5s ease;
+    overflow: hidden;
+}
+
+.moleclues-card:hover {
+    background-color: #8c243f;
+    /* ホバー時の背景色 */
+}
+
+.moleclues-card:hover .div,
+.moleclues-card:hover .div1 {
+    color: white;
+    /* ホバー時のテキスト色 */
+}
+
+.moleclues-card-child {
+    transition: transform 0.5s ease;
+    /* トランスフォームの変更にアニメーションを適用 */
+    width: 100%;
+    /* 画像の幅をカードに合わせる */
+    height: auto;
+    /* 画像の高さを自動調整 */
+    overflow: hidden;
+    /* はみ出した部分を隠す */
+    transform-origin: center center;
+    /* 拡大・縮小の基点を中央に設定 */
+    object-fit: cover;
+}
+
+.moleclues-card:hover .moleclues-card-child {
+    transform: scale(1.1);
+    /* ホバー時に画像を1.1倍に拡大 */
 }
 
 /* モレキュールカードの親コンテナ */
@@ -503,6 +537,7 @@
     /* テキストを中央揃えにする */
     font-size: 13.6px;
     /* フォントサイズを13.6pxに設定 */
+    align-self: stretch;
 }
 
 /* 子要素のフレックス設定 */
@@ -514,7 +549,7 @@
 }
 
 /* メディアクエリでのレスポンシブ設定 */
-@media (max-width: 1200px) {
+@media (max-width: 1512px) {
     .frame-parent2 .child {
         flex: 1 1 33.33%;
         /* 画面が中間のサイズの場合は3列で表示 */
