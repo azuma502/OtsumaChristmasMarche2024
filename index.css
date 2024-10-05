@@ -1,4 +1,11 @@
 /* ベースとなるスタイル */
+html,
+body {
+    margin: 0;
+    padding: 12;
+    width: 100%;
+    height: 100%;
+}
 .menu {
     font-size: 16px;
     padding: 10px;
@@ -18,17 +25,6 @@
         font-size: 12px;
         padding: 5px;
     }
-}
-
-.christmas-tree-3-1 {
-    width: 1512px;
-    position: absolute;
-    margin: 0 !important;
-    top: 62px;
-    left: 0px;
-    height: 1611.1px;
-    object-fit: cover;
-    z-index: 0;
 }
 
 .b {
@@ -66,122 +62,6 @@
     font-family: 'Tiro Devanagari Marathi';
 }
 
-.overlay {
-    align-self: stretch;
-    height: 110px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 36px 40px 16px;
-    box-sizing: border-box;
-    font-size: 40px;
-    font-family: 'Kaisei Tokumin';
-}
-
-.frame-child {
-    align-self: stretch;
-    position: relative;
-    background-color: rgba(255, 255, 255, 0);
-    height: 576px;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-
-.b1 {
-    position: relative;
-}
-
-.wrapper {
-    align-self: stretch;
-    background-color: rgba(255, 255, 255, 0.7);
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 10px 43px;
-    font-size: 92px;
-    font-family: 'Kaisei Tokumin';
-}
-
-.b2 {
-    position: relative;
-    line-height: 38.4px;
-}
-
-.container {
-    width: 763px;
-    border-radius: 20px;
-    background-color: #8c243f;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 8px 43px;
-    box-sizing: border-box;
-}
-
-.term {
-    position: relative;
-    line-height: 33.28px;
-}
-
-.term-parent {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-start;
-    gap: 46px;
-}
-
-.term-group {
-    width: 680px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 46px;
-}
-
-.term-container {
-    width: 680px;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    justify-content: flex-start;
-    gap: 46px;
-}
-
-.frame-group {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    text-align: left;
-    color: #8c243f;
-}
-
-.frame-parent {
-    align-self: stretch;
-    background-color: rgba(255, 255, 255, 0.7);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 20px 0px 48px;
-    gap: 24px;
-    font-size: 32px;
-    color: #fff;
-}
-
-.heading-1 {
-    align-self: stretch;
-    position: relative;
-    line-height: 76.8px;
-}
-
 .moleclues-card-child {
     align-self: stretch;
     position: relative;
@@ -191,28 +71,6 @@
     flex-shrink: 0;
     object-fit: cover;
     overflow: hidden;
-}
-
-.div {
-    align-self: stretch;
-    position: relative;
-    line-height: 24.64px;
-    font-weight: 600;
-    display: flex;
-    align-items: center;
-    height: 24.6px;
-    flex-shrink: 0;
-}
-
-.div1 {
-    align-self: stretch;
-    position: relative;
-    font-size: 13.6px;
-    line-height: 24.48px;
-    display: flex;
-    align-items: center;
-    align-self: auto;
-    flex-shrink: 0;
 }
 
 .parent {
@@ -226,116 +84,9 @@
     z-index: 2;
 }
 
-.moleclues-card {
-    width: 338px;
-    border-radius: 10px;
-    border: 2px solid #8c243f;
-    box-sizing: border-box;
-    overflow: hidden;
-    flex-shrink: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    transition: background-color 0.5s ease;
-    overflow: hidden;
-}
 
-.moleclues-card:hover {
-    background-color: #8c243f;
-    /* ホバー時の背景色 */
-}
 
-.moleclues-card:hover .div,
-.moleclues-card:hover .div1 {
-    color: white;
-    /* ホバー時のテキスト色 */
-}
 
-.moleclues-card-child {
-    transition: transform 0.5s ease;
-    /* トランスフォームの変更にアニメーションを適用 */
-    width: 100%;
-    /* 画像の幅をカードに合わせる */
-    height: auto;
-    /* 画像の高さを自動調整 */
-    overflow: hidden;
-    /* はみ出した部分を隠す */
-    transform-origin: center center;
-    /* 拡大・縮小の基点を中央に設定 */
-    object-fit: cover;
-}
-
-.moleclues-card:hover .moleclues-card-child {
-    transform: scale(1.1);
-    /* ホバー時に画像を1.1倍に拡大 */
-}
-
-/* モレキュールカードの親コンテナ */
-.moleclues-card-parent {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 60px;
-    /* 適切な間隔を設定 */
-}
-
-/* 個々のカードのスタイリング */
-.moleclues-card {
-    flex: 1 1 30%;
-    /* 基本の幅を20%に設定し、フレックスグロウとフレックスシュリンクを許可 */
-    max-width: 20%;
-    /* 最大幅も20%に設定 */
-    box-sizing: border-box;
-    /* パディングとボーダーを幅に含める */
-}
-
-/* レスポンシブ対応のメディアクエリ */
-@media (max-width: 1512px) {
-    .moleclues-card {
-        flex: 1 1 33.33%;
-        /* 画面が狭い場合は3列で表示 */
-        max-width: 33.33%;
-    }
-}
-
-@media (max-width: 768px) {
-    .moleclues-card {
-        flex: 1 1 50%;
-        /* タブレットサイズでは2列で表示 */
-        max-width: 50%;
-    }
-}
-
-@media (max-width: 480px) {
-    .moleclues-card {
-        flex: 1 1 100%;
-        /* モバイルサイズでは1列で表示 */
-        max-width: 100%;
-    }
-}
-
-.frame-div {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 52px;
-    text-align: left;
-    font-size: 17.6px;
-}
-
-.heading-1-shop-parent {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 24px;
-}
 
 .div12 {
     position: relative;
@@ -354,16 +105,7 @@
     font-size: 17.6px;
 }
 
-.frame-container {
-    align-self: stretch;
-    background-color: #fff7f2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 24px 0px 64px;
-    gap: 50px;
-}
+
 
 .heading-11 {
     align-self: stretch;
@@ -611,65 +353,10 @@
     font-family: 'Kaisei Tokumin';
 }
 
-.overlay-parent {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    z-index: 1;
-}
-
 .div30 {
     position: relative;
     line-height: 32px;
     font-weight: 500;
-}
-
-.parent6 {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 42px;
-    font-size: 24px;
-    font-family: Inter;
-}
-
-.overlay1 {
-    position: fixed;
-    top: 0;
-    left: 0;
-    /* 左端からスタート */
-    right: 0;
-    /* 右端まで伸ばす */
-    width: 100%;
-    /* 幅を100%に設定 */
-    background-color: #e4f7ff;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 28px 40px 16px;
-    box-sizing: border-box;
-    z-index: 2;
-    text-align: left;
-    font-size: 40px;
-    font-family: 'Kaisei Tokumin';
-}
-
-.christmas-tree-3-1-parent {
-    width: 100%;
-    position: relative;
-    background-color: #e4f7ff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: center;
-    font-size: 48px;
-    color: #8c243f;
-    font-family: Inter;
 }
 
 img {
@@ -681,4 +368,315 @@ img {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+}
+
+/* トップ */
+.header {
+    align-self: stretch;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* width: 100%; */
+    max-width: 100vw;
+    background-color: #e4f7ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 40px 16px;
+    box-sizing: border-box;
+    text-align: left;
+    font-size: 40px;
+    color: #8c243f;
+    z-index: 5;
+}
+.font2 {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* align-items: center; */
+    /* justify-content: flex-end; */
+    /* gap: 42px; */
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 500;
+}
+
+/* 画面幅が800px以下の場合、フォントサイズを小さくする */
+@media (max-width: 800px) {
+    .header {
+        font-size: 30px;
+    }
+    .font2{
+        font-size: 20px;
+    }
+    .about-parent{
+        font-size: 30px;
+    }
+}
+
+/* さらに小さな画面幅、例えば500px以下の場合、もっと小さくする */
+@media (max-width: 500px) {
+    .header {
+        font-size: 22px;
+    }
+    .font2{
+        font-size: 12px;
+    }
+    .about-parent{
+        font-size: 20px;
+    }
+}
+
+.top-parent {
+    width: 100%;
+    position: relative;
+    background-color: #e4f7ff;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    /* justify-content: flex-start; */
+    text-align: center;
+    font-size: 48px;
+    color: #8c243f;
+    font-family: Inter;
+}
+
+.christmas-tree-img {
+    width: 100%;
+    position: absolute;
+    align-items: center;
+    /* margin: 0 !important; */
+    top: 62px;
+    /* left: 0px; */
+    height: 1611.1px;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.image-white-overlay {
+    align-self: stretch;
+    width: 100%;
+    /* display: flex; */
+    /* flex-direction: column; */
+    align-items: flex-start;
+    justify-content: center;
+    z-index: 2
+}
+
+.header-overlay {
+    width: 100%;
+    align-self: stretch;
+    height: 110px;
+    /* display: flex; */
+    /* flex-direction: row; */
+    align-items: center;
+    /* justify-content: space-between; */
+    /* padding: 36px 40px 16px; */
+    /* box-sizing: border-box; */
+}
+
+.image-transparent-overlay {
+    box-sizing: border-box;
+    width: 100%;
+    align-self: stretch;
+    /* position: relative; */
+    background-color: rgba(255, 255, 255, 0);
+    height: 576px;
+    /* overflow: hidden; */
+    /* flex-shrink: 0; */
+}
+
+.christmas-font {
+    position: relative;
+    font-family: 'Kaisei Tokumin';
+}
+
+.wrapper {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0.7);
+    /* display: flex; */
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    padding: 12px 44px;
+    font-size: 92px;
+}
+
+/* 開催概要 */
+.about-button {
+    align-self: stretch;
+    max-width: 100vw;
+    border-radius: 20px;
+    background-color: #8c243f;
+    /* display: flex; */
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    padding: 16px 40px;
+    margin: 0px 60px;
+    box-sizing: border-box;
+}
+
+.b2 {
+    line-height: 38.4px;
+}
+
+.about-text-parent {
+    align-self: stretch;
+    align-content: center;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin: 0px 20px;
+    padding: 0px 20px;
+    color: #8c243f;
+    text-align: left;
+    
+}
+
+.about-parent {
+    align-self: stretch;
+    background-color: rgba(255, 255, 255, 0.7);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px 0px 48px;
+    gap: 24px;
+    color: #fff;
+}
+
+/* 参加団体 */
+
+.participation-container {
+    align-self: stretch;
+    background-color: #fff7f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 24px 24px 64px;
+    gap: 24px;
+}
+
+.h1 {
+    align-self: stretch;
+    /* position: relative; */
+    line-height: 76.8px;
+}
+
+/* カード */
+.h4 {
+    align-self: stretch;
+    position: relative;
+    line-height: 24.64px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    height: 24.6px;
+    /* flex-shrink: 0; */
+    font-size: 17.6px;
+}
+
+.h5 {
+    align-self: stretch;
+    position: relative;
+    font-size: 13.6px;
+    line-height: 24.48px;
+    display: flex;
+    align-items: center;
+    align-self: auto;
+    flex-shrink: 0;
+}
+.moleclues-card {
+    width: 338px;
+    border-radius: 10px;
+    border: 2px solid #8c243f;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    transition: background-color 0.5s ease;
+    overflow: hidden;
+}
+
+.moleclues-card:hover {
+    background-color: #8c243f;
+    /* ホバー時の背景色 */
+}
+
+.moleclues-card:hover .div,
+.moleclues-card:hover .div1 {
+    color: white;
+    /* ホバー時のテキスト色 */
+}
+
+.moleclues-card-child {
+    transition: transform 0.5s ease;
+    /* トランスフォームの変更にアニメーションを適用 */
+    width: 100%;
+    /* 画像の幅をカードに合わせる */
+    height: auto;
+    /* 画像の高さを自動調整 */
+    overflow: hidden;
+    /* はみ出した部分を隠す */
+    transform-origin: center center;
+    /* 拡大・縮小の基点を中央に設定 */
+    object-fit: cover;
+}
+
+.moleclues-card:hover .moleclues-card-child {
+    transform: scale(1.1);
+    /* ホバー時に画像を1.1倍に拡大 */
+}
+
+/* モレキュールカードの親コンテナ */
+.moleclues-card-parent {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    /* 適切な間隔を設定 */
+}
+
+/* 個々のカードのスタイリング */
+.moleclues-card {
+    flex: 1 1 30%;
+    /* 基本の幅を20%に設定し、フレックスグロウとフレックスシュリンクを許可 */
+    max-width: 20%;
+    /* 最大幅も20%に設定 */
+    box-sizing: border-box;
+    /* パディングとボーダーを幅に含める */
+}
+
+/* レスポンシブ対応のメディアクエリ */
+@media (max-width: 1512px) {
+    .moleclues-card {
+        flex: 1 1 33.33%;
+        /* 画面が狭い場合は3列で表示 */
+        max-width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .moleclues-card {
+        flex: 1 1 50%;
+        /* タブレットサイズでは2列で表示 */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .moleclues-card {
+        flex: 1 1 100%;
+        /* モバイルサイズでは1列で表示 */
+        max-width: 100%;
+    }
 }
