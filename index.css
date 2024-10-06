@@ -6,10 +6,6 @@ body {
     width: 100%;
     height: 100%;
 }
-.menu {
-    font-size: 16px;
-    padding: 10px;
-}
 
 /* タブレットサイズ */
 @media (max-width: 768px) {
@@ -32,343 +28,7 @@ body {
     position: relative;
     display: none;
 }
-
-.menu {
-    width: 85.2px;
-    position: relative;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
-    height: 32px;
-    flex-shrink: 0;
-}
-
-.menu-icon {
-    width: 32px;
-    position: relative;
-    height: 32px;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-
-.menu-parent {
-    display: none;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-end;
-    gap: 22px;
-    text-align: left;
-    font-size: 32px;
-    font-family: 'Tiro Devanagari Marathi';
-}
-
-.moleclues-card-child {
-    align-self: stretch;
-    position: relative;
-    max-width: 100%;
-    overflow: hidden;
-    height: 222.7px;
-    flex-shrink: 0;
-    object-fit: cover;
-    overflow: hidden;
-}
-
-.parent {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-    padding: 16px;
-    gap: 9px;
-    z-index: 2;
-}
-
-
-
-
-
-.div12 {
-    position: relative;
-    line-height: 31.68px;
-    font-weight: 600;
-}
-
-.atoms-icon {
-    border-radius: 40px;
-    border: 2px solid #8c243f;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    padding: 16px 100px;
-    font-size: 17.6px;
-}
-
-
-
-.heading-11 {
-    align-self: stretch;
-    position: relative;
-    line-height: 76.8px;
-    z-index: 0;
-}
-
-.frame-item {
-    align-self: stretch;
-    position: relative;
-    background-color: #8c243f;
-    /* height: 619px; */
-    z-index: 1;
-}
-
-.frame-item iframe {
-    width: 100%;
-    height: auto;
-    aspect-ratio: 16 / 9;
-    /* 16:9の比率を保持 */
-}
-
-.heading-12 {
-    width: 1512px;
-    position: absolute;
-    margin: 0 !important;
-    top: 418.48px;
-    left: 0px;
-    display: flex;
-    color: #8c243f;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-}
-
-.heading-1-shop-group {
-    align-self: stretch;
-    background-color: #8c243f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 36px 0px 80px;
-    position: relative;
-    gap: 24px;
-    color: #fff;
-}
-
-.heading-13 {
-    align-self: stretch;
-    position: relative;
-}
-
-.he {
-    align-self: stretch;
-    position: relative;
-    font-size: 20px;
-    line-height: 24.48px;
-    font-weight: 600;
-}
-
-.heading-1-shop-container {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-    z-index: 0;
-}
-
-.heading-14 {
-    width: 1512px;
-    position: absolute;
-    margin: 0 !important;
-    top: 449.48px;
-    left: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 2;
-}
-
-.frame-parent1 {
-    align-self: stretch;
-    background-color: #fff7f2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 36px 0px 80px;
-    position: relative;
-    gap: 30px;
-}
-
-.p {
-    margin: 0;
-}
-
-.heading-1-shop-parent1 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 20px;
-}
-
-.frame-wrapper {
-    align-self: stretch;
-    background-color: #fff7f2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 36px 0px 80px;
-}
-
-.heading-16 {
-    align-self: stretch;
-    position: relative;
-    font-weight: 600;
-}
-
-.div14 {
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    line-height: 24.48px;
-}
-
-.atoms-text {
-    width: 177px;
-    position: relative;
-    height: 25px;
-}
-
-.atoms-text-parent {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 153px;
-}
-
-.atoms-text-group {
-    align-self: stretch;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-    gap: 90px;
-}
-
-.frame-parent2 {
-    display: flex;
-    flex-direction: row;
-    /* アイテムを横並びに配置 */
-    flex-wrap: wrap;
-    /* コンテナの幅を超えると折り返し */
-    align-items: center;
-    /* アイテムを垂直方向の中央に配置 */
-    justify-content: center;
-    /* アイテムを水平方向の中央に配置 */
-    gap: 32px;
-    /* アイテム間に32pxの間隔を設ける */
-    padding: 0 20px;
-    /* 左右に20pxのパディングを設定 */
-    text-align: center;
-    /* テキストを中央揃えにする */
-    font-size: 13.6px;
-    /* フォントサイズを13.6pxに設定 */
-    align-self: stretch;
-}
-
-/* 子要素のフレックス設定 */
-.frame-parent2 .child {
-    flex: 1 1 30%;
-    /* 基本の幅を30%に設定 */
-    max-width: 30%;
-    /* 最大幅も30%に設定 */
-}
-
-/* メディアクエリでのレスポンシブ設定 */
-@media (max-width: 1512px) {
-    .frame-parent2 .child {
-        flex: 1 1 33.33%;
-        /* 画面が中間のサイズの場合は3列で表示 */
-        max-width: 33.33%;
-    }
-}
-
-@media (max-width: 768px) {
-    .frame-parent2 .child {
-        flex: 1 1 50%;
-        /* タブレットサイズでは2列で表示 */
-        max-width: 50%;
-    }
-}
-
-@media (max-width: 480px) {
-    .frame-parent2 .child {
-        flex: 1 1 100%;
-        /* モバイルサイズでは1列で表示 */
-        max-width: 100%;
-    }
-}
-
-.heading-1-shop-parent2 {
-    align-self: stretch;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 53px 0px;
-    gap: 32px;
-    font-size: 24px;
-}
-
-.div29 {
-    align-self: stretch;
-    position: relative;
-    font-size: 13.28px;
-    line-height: 24.48px;
-    font-family: Inter;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 24.5px;
-    flex-shrink: 0;
-}
-
-.parent5 {
-    align-self: stretch;
-    background-color: #8c243f;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding: 62px 0px;
-    gap: 12px;
-    font-size: 20px;
-    color: #fff;
-    font-family: 'Kaisei Tokumin';
-}
-
-.div30 {
-    position: relative;
-    line-height: 32px;
-    font-weight: 500;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-.frame-div {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
+/* ------- */
 
 /* トップ */
 .header {
@@ -453,6 +113,7 @@ img {
     z-index: 0;
 }
 
+
 .image-white-overlay {
     align-self: stretch;
     width: 100%;
@@ -494,12 +155,40 @@ img {
 .wrapper {
     align-self: stretch;
     background-color: rgba(255, 255, 255, 0.7);
-    /* display: flex; */
+    display: flex;
     flex-direction: row;
-    /* align-items: center; */
+    align-items: center;
     justify-content: center;
     padding: 12px 44px;
     font-size: 92px;
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        font-size: 72px;
+        /* 画面幅が1200px以下の場合 */
+    }
+}
+
+@media (max-width: 992px) {
+    .wrapper {
+        font-size: 56px;
+        /* 画面幅が992px以下の場合 */
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        font-size: 40px;
+        /* 画面幅が768px以下の場合 */
+    }
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+        font-size: 32px;
+        /* 画面幅が576px以下の場合 */
+    }
 }
 
 /* 開催概要 */
@@ -590,6 +279,18 @@ img {
     align-self: auto;
     flex-shrink: 0;
 }
+
+.text-box-card {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 20px 16px;
+    gap: 8px;
+    z-index: 2;
+}
+
 .moleclues-card {
     width: 338px;
     border-radius: 10px;
@@ -605,29 +306,35 @@ img {
     overflow: hidden;
 }
 
+.moleclues-card-child {
+    align-self: stretch;
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    height: 222.7px;
+    flex-shrink: 0;
+    object-fit: cover;
+    overflow: hidden;
+}
+
 .moleclues-card:hover {
     background-color: #8c243f;
     /* ホバー時の背景色 */
 }
 
-.moleclues-card:hover .div,
-.moleclues-card:hover .div1 {
+.moleclues-card:hover .h4,
+.moleclues-card:hover .h5 {
     color: white;
     /* ホバー時のテキスト色 */
 }
 
-.moleclues-card-child {
+.moleclues-card-image {
     transition: transform 0.5s ease;
-    /* トランスフォームの変更にアニメーションを適用 */
     width: 100%;
-    /* 画像の幅をカードに合わせる */
     height: auto;
-    /* 画像の高さを自動調整 */
-    overflow: hidden;
-    /* はみ出した部分を隠す */
+    
     transform-origin: center center;
-    /* 拡大・縮小の基点を中央に設定 */
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 .moleclues-card:hover .moleclues-card-child {
@@ -649,11 +356,8 @@ img {
 /* 個々のカードのスタイリング */
 .moleclues-card {
     flex: 1 1 30%;
-    /* 基本の幅を20%に設定し、フレックスグロウとフレックスシュリンクを許可 */
     max-width: 20%;
-    /* 最大幅も20%に設定 */
     box-sizing: border-box;
-    /* パディングとボーダーを幅に含める */
 }
 
 /* レスポンシブ対応のメディアクエリ */
@@ -679,4 +383,225 @@ img {
         /* モバイルサイズでは1列で表示 */
         max-width: 100%;
     }
+}
+
+.more-button{
+    position: relative;
+    line-height: 31.68px;
+    font-weight: 600;
+    border: 2px solid #8c243f;
+    border-radius: 40px;
+    padding: 16px 100px;
+    font-size: 17.6px;
+    background-color: #fff7f2;
+    color: #8c243f;
+    font-family: Inter;
+}
+
+.more-button:hover{
+    background-color: #8c243f;
+    color: #fff7f2;
+    transition: transform 0.8s ease;
+}
+
+/* 昨年の様子 */
+.youtube-container {
+    align-self: stretch;
+    background-color: #8c243f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 36px 20px 60px;
+    position: relative;
+    gap: 24px;
+    color: #fff;
+}
+
+.youtube-in {
+    position: relative;
+    overflow: hidden;
+    /* オーバーフローされる内容は非表示に */
+    width: 100%;
+    /* コンテナの幅をビューポートに対して100%に設定 */
+    padding-top: 56.25%;
+    /* 16:9のアスペクト比を保持する */
+}
+
+.youtube-in iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* iframeの幅をコンテナの100%に設定 */
+    height: 100%;
+    /* iframeの高さをコンテナの100%に設定 */
+}
+
+/* 開催場所 */
+.place-info {
+    align-self: stretch;
+    background-color: #fff7f2;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; */
+    padding: 36px 20px 80px;
+    /* position: relative; */
+    gap: 30px;
+}
+
+.place-info-container {
+    align-self: stretch;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; */
+    gap: 20px;
+    z-index: 0;
+}
+
+.font3 {
+    /* align-self: stretch;
+    position: relative; */
+    font-size: 20px;
+    line-height: 24.48px;
+    font-weight: 600;
+}
+
+.place-item iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    /* 16:9の比率を保持 */
+}
+
+/* 実行委員より */
+.coment-text-container{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.coment-container{
+    align-self: stretch;
+    background-color: #fff7f2;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 36px 20px 80px;
+}
+
+.p {
+    margin: 0;
+}
+
+/* メンバー */
+.member-container {
+    max-width: 100vw;
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 54px 20px;
+    /* gap: 32px; */
+    /* font-size: 24px; */
+}
+
+.font4 {
+    align-self: stretch;
+    position: relative;
+    font-weight: 600;
+}
+
+.frame-member-container {
+    align-self: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* justify-content: space-between; */
+    padding: 0 20px;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.atoms-text-member-group {
+    align-items: stretch;
+    width: 100%;
+    /* 横幅を親要素いっぱいに設定 */
+    /* display: flex; */
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /* 子要素を両端に配置 */
+    padding: 8px 20px;
+    box-sizing: border-box;
+}
+
+/* メディアクエリでのレスポンシブ設定 */
+@media (max-width: 1512px) {
+    .atoms-text-member-group {
+        flex: 1 1 33.33%;
+        /* 画面が中間のサイズの場合は3列で表示 */
+        max-width: 33.33%;
+    }
+}
+
+@media (max-width: 768px) {
+    .atoms-text-member-group {
+        flex: 1 1 50%;
+        /* タブレットサイズでは2列で表示 */
+        max-width: 50%;
+    }
+}
+
+@media (max-width: 480px) {
+    .atoms-text-member-group{
+        flex: 1 1 100%;
+        /* モバイルサイズでは1列で表示 */
+        max-width: 100%;
+    }
+}
+
+.font7{
+    /* position: absolute; */
+    /* top: 0%;
+    left: 0%; */
+    line-height: 24.48px;
+    font-size: 13.6px;
+    /* width:auto; */
+}
+
+/* フッター */
+.parent5 {
+    align-self: stretch;
+    background-color: #8c243f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 62px 0px;
+    gap: 12px;
+    font-size: 20px;
+    color: #fff;
+    font-family: 'Kaisei Tokumin';
+}
+
+.div29 {
+    align-self: stretch;
+    position: relative;
+    font-size: 13.28px;
+    line-height: 24.48px;
+    font-family: Inter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 24.5px;
+    flex-shrink: 0;
 }
