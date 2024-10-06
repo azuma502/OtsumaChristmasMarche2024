@@ -37,7 +37,6 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    /* width: 100%; */
     max-width: 100vw;
     background-color: #e4f7ff;
     display: flex;
@@ -51,11 +50,6 @@ body {
     z-index: 5;
 }
 .font2 {
-    /* display: flex; */
-    /* flex-direction: row; */
-    /* align-items: center; */
-    /* justify-content: flex-end; */
-    /* gap: 42px; */
     font-size: 24px;
     font-family: Inter;
     font-weight: 500;
@@ -92,9 +86,7 @@ body {
     position: relative;
     background-color: #e4f7ff;
     display: flex;
-    /* flex-direction: column; */
     align-items: center;
-    /* justify-content: flex-start; */
     text-align: center;
     font-size: 48px;
     color: #8c243f;
@@ -105,9 +97,7 @@ body {
     width: 100%;
     position: absolute;
     align-items: center;
-    /* margin: 0 !important; */
     top: 62px;
-    /* left: 0px; */
     height: 1611.1px;
     object-fit: cover;
     z-index: 0;
@@ -117,8 +107,6 @@ body {
 .image-white-overlay {
     align-self: stretch;
     width: 100%;
-    /* display: flex; */
-    /* flex-direction: column; */
     align-items: flex-start;
     justify-content: center;
     z-index: 2
@@ -128,23 +116,15 @@ body {
     width: 100%;
     align-self: stretch;
     height: 110px;
-    /* display: flex; */
-    /* flex-direction: row; */
     align-items: center;
-    /* justify-content: space-between; */
-    /* padding: 36px 40px 16px; */
-    /* box-sizing: border-box; */
 }
 
 .image-transparent-overlay {
     box-sizing: border-box;
     width: 100%;
     align-self: stretch;
-    /* position: relative; */
     background-color: rgba(255, 255, 255, 0);
     height: 576px;
-    /* overflow: hidden; */
-    /* flex-shrink: 0; */
 }
 
 .christmas-font {
@@ -197,8 +177,6 @@ body {
     max-width: 100vw;
     border-radius: 20px;
     background-color: #8c243f;
-    /* display: flex; */
-    /* flex-direction: row; */
     align-items: center;
     justify-content: center;
     padding: 16px 40px;
@@ -214,7 +192,6 @@ body {
     align-self: stretch;
     align-content: center;
     display: flex;
-    /* flex-direction: row; */
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -252,7 +229,6 @@ body {
 
 .h1 {
     align-self: stretch;
-    /* position: relative; */
     line-height: 76.8px;
 }
 
@@ -265,7 +241,6 @@ body {
     display: flex;
     align-items: center;
     height: 24.6px;
-    /* flex-shrink: 0; */
     font-size: 17.6px;
 }
 
@@ -334,7 +309,6 @@ body {
     height: auto;
     
     transform-origin: center center;
-    /* object-fit: cover; */
 }
 
 .moleclues-card:hover .moleclues-card-child {
@@ -442,28 +416,17 @@ body {
 .place-info {
     align-self: stretch;
     background-color: #fff7f2;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; */
     padding: 36px 20px 80px;
-    /* position: relative; */
     gap: 30px;
 }
 
 .place-info-container {
     align-self: stretch;
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; */
     gap: 20px;
     z-index: 0;
 }
 
 .font3 {
-    /* align-self: stretch;
-    position: relative; */
     font-size: 20px;
     line-height: 24.48px;
     font-weight: 600;
@@ -489,8 +452,6 @@ body {
 .coment-container{
     align-self: stretch;
     background-color: #fff7f2;
-    /* display: flex; */
-    flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     padding: 36px 20px 80px;
@@ -509,8 +470,6 @@ body {
     align-items: center;
     justify-content: center;
     padding: 54px 20px;
-    /* gap: 32px; */
-    /* font-size: 24px; */
 }
 
 .font4 {
@@ -534,9 +493,6 @@ body {
 .atoms-text-member-group {
     align-items: stretch;
     width: 100%;
-    /* 横幅を親要素いっぱいに設定 */
-    /* display: flex; */
-    flex-direction: row;
     align-items: center;
     justify-content: space-between;
     /* 子要素を両端に配置 */
@@ -570,12 +526,8 @@ body {
 }
 
 .font7{
-    /* position: absolute; */
-    /* top: 0%;
-    left: 0%; */
     line-height: 24.48px;
     font-size: 13.6px;
-    /* width:auto; */
 }
 
 /* フッター */
