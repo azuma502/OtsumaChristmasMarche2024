@@ -55,29 +55,40 @@ body {
     font-weight: 500;
 }
 
-/* 画面幅が800px以下の場合、フォントサイズを小さくする */
-@media (max-width: 800px) {
+@media (max-width: 768px) {
     .header {
         font-size: 30px;
     }
     .font2{
         font-size: 20px;
-    }
-    .about-parent{
-        font-size: 30px;
     }
 }
 
 /* さらに小さな画面幅、例えば500px以下の場合、もっと小さくする */
-@media (max-width: 500px) {
+@media (max-width: 425px) {
     .header {
         font-size: 22px;
+        padding: 20px 20px 12px;
     }
     .font2{
         font-size: 12px;
     }
-    .about-parent{
-        font-size: 20px;
+}
+
+@media (max-width: 375px) {
+    .header {
+        font-size: 18px;
+        padding: 20px 20px 12px;
+    }
+
+    .font2 {
+        font-size: 12px;
+    }
+}
+@media (max-width: 320px) {
+    .header{
+        font-size:16px;
+        padding: 20px 12px 12px;
     }
 }
 
@@ -92,6 +103,21 @@ body {
     color: #8c243f;
     font-family: Inter;
 }
+@media (max-width: 425px) {
+    .top-parent {
+        font-size: 32px;
+    }
+}
+@media (max-width: 375px) {
+    .top-parent {
+        font-size: 24px;
+    }
+}
+@media (max-width: 320px) {
+    .top-parent {
+        font-size: 20px;
+    }
+}
 
 .christmas-tree-img {
     width: 100%;
@@ -102,7 +128,27 @@ body {
     object-fit: cover;
     z-index: 0;
 }
+@media screen and (max-width: 768px) {
+    .christmas-tree-img {
+        width: 100%;
+        /* スマホで表示する際は画像を100%の幅にして調整 */
+        max-width: 900px;
+        /* 最大幅を300pxに制限（スマホでの大きさに調整） */
+        height: auto;
+        top: 70px;
+    }
+}
 
+@media screen and (max-width: 425px) {
+    .christmas-tree-img {
+        width: 100%;
+        /* スマホで表示する際は画像を100%の幅にして調整 */
+        max-width: 500px;
+        /* 最大幅を300pxに制限（スマホでの大きさに調整） */
+        height: auto;
+        top: 54px;
+    }
+}
 
 .image-white-overlay {
     align-self: stretch;
@@ -124,7 +170,29 @@ body {
     width: 100%;
     align-self: stretch;
     background-color: rgba(255, 255, 255, 0);
-    height: 600px;
+    height: 500px;
+}
+@media screen and (max-width: 768px) {
+    .image-transparent-overlay{
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .image-transparent-overlay {
+        height: 40px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .image-transparent-overlay {
+        height: 20px;
+    }
+}
+@media screen and (max-width: 320px) {
+    .image-transparent-overlay {
+        height: 0px;
+    }
 }
 
 .christmas-font {
@@ -146,28 +214,34 @@ body {
 @media (max-width: 1200px) {
     .wrapper {
         font-size: 72px;
-        /* 画面幅が1200px以下の場合 */
     }
 }
 
 @media (max-width: 992px) {
     .wrapper {
         font-size: 56px;
-        /* 画面幅が992px以下の場合 */
     }
 }
 
 @media (max-width: 768px) {
     .wrapper {
         font-size: 40px;
-        /* 画面幅が768px以下の場合 */
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 425px) {
     .wrapper {
-        font-size: 32px;
-        /* 画面幅が576px以下の場合 */
+        font-size: 28px;
+    }
+}
+@media (max-width: 375px) {
+    .wrapper {
+        font-size: 24px;
+    }
+}
+@media (max-width: 320px) {
+    .wrapper {
+        font-size: 20px;
     }
 }
 
@@ -182,6 +256,26 @@ body {
     padding: 16px 40px;
     margin: 0px 60px;
     box-sizing: border-box;
+}
+@media (max-width: 425px) {
+    .about-button {
+        padding: 8px 30px;
+        margin: 0px 80px;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-button {
+        padding: 8px 30px;
+        margin: 0px 80px;
+    }
+}
+
+@media (max-width: 320px) {
+    .about-button {
+            padding: 4px 30px;
+            margin: 0px 80px;
+        }
 }
 
 .b2 {
@@ -199,7 +293,6 @@ body {
     padding: 0px 20px;
     color: #8c243f;
     text-align: left;
-    
 }
 
 .about-parent {
@@ -209,9 +302,55 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    padding: 20px 0px 48px;
+    padding: 0px 0px 48px;
     gap: 24px;
     color: #fff;
+}
+@media screen and (max-width: 768px) {
+    .about-parent {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .about-parent{
+        font-size: 20px;
+        gap: 18px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .about-parent {
+        font-size: 18px;
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .about-parent {
+            font-size: 12px;
+            gap: 8px;
+        }
+}
+
+.font6 {
+    align-self: stretch;
+    position: relative;
+    font-size: 13.28px;
+    line-height: 24.48px;
+    font-family: Inter;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* height: 24.5px; */
+    flex-shrink: 0;
+    color: #8c243f;
+    padding: 0px 16px;
+}
+@media screen and (max-width: 320px) {
+    .font6 {
+        font-size: 10px;
+    }
 }
 
 .about-text-detail {
@@ -245,6 +384,21 @@ body {
 .h1 {
     align-self: stretch;
     line-height: 76.8px;
+}
+@media (max-width: 425px) {
+    .h1 {
+        line-height: 60px;
+    }
+}
+@media (max-width: 375px) {
+    .h1 {
+        line-height: 30px;
+    }
+}
+@media (max-width: 320px) {
+    .h1 {
+        line-height: 20px;
+    }
 }
 
 /* カード */
@@ -296,6 +450,12 @@ body {
     overflow: hidden;
 }
 
+@media (max-width: 320px) {
+    .moleclues-card {
+        width: 180px;
+    }
+}
+
 .moleclues-card-child {
     align-self: stretch;
     position: relative;
@@ -331,7 +491,6 @@ body {
     /* ホバー時に画像を1.1倍に拡大 */
 }
 
-/* モレキュールカードの親コンテナ */
 .moleclues-card-parent {
     display: flex;
     flex-direction: row;
@@ -339,7 +498,6 @@ body {
     align-items: center;
     justify-content: center;
     gap: 60px;
-    /* 適切な間隔を設定 */
 }
 
 /* 個々のカードのスタイリング */
@@ -386,6 +544,16 @@ body {
     color: #8c243f;
     font-family: Inter;
 }
+@media (max-width: 425px) {
+    .more-button {
+        padding: 16px 70px;
+    }
+}
+@media (max-width: 320px) {
+    .more-button {
+        padding: 16px 50px;
+    }
+}
 
 .more-button:hover{
     background-color: #8c243f;
@@ -431,20 +599,38 @@ body {
 .place-info {
     align-self: stretch;
     background-color: #fff7f2;
-    padding: 36px 20px 80px;
+    padding: 36px 20px 60px;
     gap: 30px;
+}
+@media (max-width: 425px) {
+    .place-info {
+        padding: 36px 20px 20px;
+    }
 }
 
 .place-info-container {
     align-self: stretch;
-    gap: 20px;
+    gap: 32px;
     z-index: 0;
+    padding: 0px 0px 12px;
 }
 
 .font3 {
     font-size: 20px;
     line-height: 24.48px;
     font-weight: 600;
+}
+
+@media (max-width: 425px) {
+    .font3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .font3 {
+        font-size: 12px;
+    }
 }
 
 .place-item iframe {
@@ -471,6 +657,11 @@ body {
     justify-content: flex-start;
     padding: 36px 30px 80px;
 }
+@media (max-width: 425px) {
+    .coment-container{
+        padding: 36px 30px 40px;
+    }
+}
 
 .p {
     margin: 0;
@@ -485,6 +676,11 @@ body {
     align-items: center;
     justify-content: center;
     padding: 54px 20px;
+}
+@media (max-width: 425px) {
+    .member-container {
+        padding: 30px 20px;
+    }
 }
 
 .font4 {
