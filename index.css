@@ -331,7 +331,6 @@ body {
     /* ホバー時に画像を1.1倍に拡大 */
 }
 
-/* モレキュールカードの親コンテナ */
 .moleclues-card-parent {
     display: flex;
     flex-direction: row;
@@ -339,7 +338,6 @@ body {
     align-items: center;
     justify-content: center;
     gap: 60px;
-    /* 適切な間隔を設定 */
 }
 
 /* 個々のカードのスタイリング */
