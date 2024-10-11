@@ -390,12 +390,12 @@ body {
         line-height: 60px;
     }
 }
-@media (max-width: 425px) {
+@media (max-width: 375px) {
     .h1 {
         line-height: 30px;
     }
 }
-@media (max-width: 425px) {
+@media (max-width: 320px) {
     .h1 {
         line-height: 20px;
     }
@@ -448,6 +448,12 @@ body {
     justify-content: flex-start;
     transition: background-color 0.5s ease;
     overflow: hidden;
+}
+
+@media (max-width: 320px) {
+    .moleclues-card {
+        width: 180px;
+    }
 }
 
 .moleclues-card-child {
@@ -537,6 +543,16 @@ body {
     background-color: #fff7f2;
     color: #8c243f;
     font-family: Inter;
+}
+@media (max-width: 425px) {
+    .more-button {
+        padding: 16px 70px;
+    }
+}
+@media (max-width: 320px) {
+    .more-button {
+        padding: 16px 50px;
+    }
 }
 
 .more-button:hover{
