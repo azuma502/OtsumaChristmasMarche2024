@@ -284,6 +284,11 @@ body{
     }
 }
 
+.font12 {
+    font-size: 32px;
+    color: #8c243f;
+}
+
 .more-button:hover {
     background-color: #8c243f;
     color: #fff7f2;
