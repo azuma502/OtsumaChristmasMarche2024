@@ -53,6 +53,7 @@ body {
     font-size: 24px;
     font-family: Inter;
     font-weight: 500;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
@@ -198,6 +199,7 @@ body {
 .christmas-font {
     position: relative;
     font-family: 'Kaisei Tokumin';
+    cursor: pointer;
 }
 
 .wrapper {
@@ -378,7 +380,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     padding: 24px 24px 64px;
-    gap: 24px;
+    gap: 32px;
 }
 
 .h1 {
@@ -422,6 +424,7 @@ body {
     align-items: center;
     align-self: auto;
     flex-shrink: 0;
+    height: 48px;
 }
 
 .text-box-card {
@@ -482,11 +485,11 @@ body {
     transition: transform 0.5s ease;
     width: 100%;
     height: auto;
-    
     transform-origin: center center;
+    overflow: hidden;
 }
 
-.moleclues-card:hover .moleclues-card-child {
+.moleclues-card:hover .moleclues-card-image {
     transform: scale(1.1);
     /* ホバー時に画像を1.1倍に拡大 */
 }
@@ -543,6 +546,7 @@ body {
     background-color: #fff7f2;
     color: #8c243f;
     font-family: Inter;
+    cursor: pointer;
 }
 @media (max-width: 425px) {
     .more-button {
