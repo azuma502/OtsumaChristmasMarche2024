@@ -81,6 +81,21 @@ body{
     align-items: center;
 }
 
+@media (max-width: 425px) {
+    .header-overlay {
+        height: 60px;
+    }
+}
+@media (max-width: 375px) {
+    .header-overlay {
+        height: 50px;
+    }
+}
+@media (max-width: 320px) {
+    .header-overlay {
+        height: 40px;
+    }
+}
 
 /* 参加団体 */
 
@@ -98,6 +113,34 @@ body{
 .h1 {
     align-self: stretch;
     line-height: 76.8px;
+    font-size: 48px;
+    color: #8c243f;
+    padding: 20px;
+    position: relative;
+    text-align: center;
+}
+@media (max-width: 425px) {
+    .h1 {
+        font-size: 32px;
+        line-height: 50px;
+        padding:18px;
+    }
+}
+
+@media (max-width: 375px) {
+    .h1 {
+        font-size: 24px;
+        line-height: 40px;
+        padding: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    .h1 {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 12px;
+    }
 }
 
 /* カード */
@@ -156,8 +199,93 @@ body{
     position: relative;
     max-width: 100%;
     overflow: hidden;
-    height: 222.7px;
+    height: 240px;
     flex-shrink: 0;
     object-fit: cover;
     overflow: hidden;
+}
+
+/* 参加団体一覧セクション */
+.participation-container-detail{
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 54px;
+}
+.participation-detail-parent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 60px;
+    text-align: left;
+    color: #8c243f;
+    font-family: Inter;
+}
+@media (max-width: 425px) {
+    .participation-detail-parent {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+@media (max-width: 320px) {
+    .moleclues-card {
+        width: 300px;
+    }
+}
+
+
+.participation-detail-textarea{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap:14px;
+}
+
+
+.participation-detail-title{
+    font-size: 20px;
+    line-height: 40px;
+}
+.participation-detail-text{
+    border-top: 1px solid #8c243f;
+    border-bottom: 1px solid #8c243f;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 0px;
+}
+
+.more-button {
+    position: relative;
+    line-height: 31.68px;
+    font-weight: 600;
+    border: 2px solid #8c243f;
+    border-radius: 40px;
+    padding: 16px 100px;
+    font-size: 17.6px;
+    background-color: #fff7f2;
+    color: #8c243f;
+    font-family: Inter;
+    cursor: pointer;
+}
+
+@media (max-width: 425px) {
+    .more-button {
+        padding: 16px 70px;
+    }
+}
+
+@media (max-width: 320px) {
+    .more-button {
+        padding: 16px 50px;
+    }
+}
+
+.more-button:hover {
+    background-color: #8c243f;
+    color: #fff7f2;
+    transition: transform 0.8s ease;
 }
