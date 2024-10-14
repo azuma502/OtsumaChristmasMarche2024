@@ -394,7 +394,7 @@ body {
     align-items: center;
     justify-content: flex-start;
     padding: 24px 24px 64px;
-    gap: 32px;
+    gap: 56px;
 }
 
 .h1 {
@@ -547,6 +547,9 @@ body {
         /* モバイルサイズでは1列で表示 */
         max-width: 100%;
     }
+}
+.font12{
+    font-size: 32px;
 }
 
 .more-button{
