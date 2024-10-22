@@ -222,6 +222,7 @@ body{
     text-align: left;
     color: #8c243f;
     font-family: Inter;
+    padding: 0px 20px;
 }
 @media (max-width: 425px) {
     .participation-detail-parent {
@@ -242,6 +243,12 @@ body{
     align-items: flex-start;
     justify-content: flex-start;
     gap:14px;
+    width: 350px;
+}
+@media (max-width: 320px) {
+    .participation-detail-textarea {
+        width: 290px;
+    }
 }
 
 
@@ -293,4 +300,7 @@ body{
     background-color: #8c243f;
     color: #fff7f2;
     transition: transform 0.8s ease;
+}
+.font11{
+    color: #fff7f2;
 }

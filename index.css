@@ -363,6 +363,16 @@ body {
     color: #8c243f;
     padding: 0px 16px;
 }
+@media screen and (max-width: 425px) {
+    .font6 {
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .font6 {
+        font-size: 10px;
+    }
+}
 @media screen and (max-width: 320px) {
     .font6 {
         font-size: 10px;
